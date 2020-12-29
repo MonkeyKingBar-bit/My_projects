@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <title>Covid-19</title>
+
+    <!-- Install icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ 
+    <!-- map Fedya -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="crossorigin=""></script>
+    <!-- / map Fedya  -->
+
+    <!--Chart.js for Graph-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between align-items-center">
+              <div class="hamburger-menu d-flex align-items-center">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="https://systems.jhu.edu/">JHU CSSE</a></li>
+                  <li><a class="menu__item" href="https://systems.jhu.edu/research/public-health/ncov-model-2/">Modeling COVID-19</a></li>
+                  <li><a class="menu__item" href="https://coronavirus.jhu.edu/">JHU COVID-19 Resource Center</a></li>
+                  <li><a class="menu__item" href="https://engineering.jhu.edu/covid-19/support-the-csse-covid-19-dashboard-team/">Donate</a></li>
+                  <li class="menu__item">
+                    <p id="about">About us</p>
+                    <div class="aboutContent">
+                      <a href="https://github.com/Mikulich-Fedor">Fedor</a>
+                      <a href="https://github.com/jadei2508">Roman</a>
+                      <a href="https://github.com/Alkatraz911">Pavel</a>
+                      <a href="https://github.com/MonkeyKingBar-bit">Catherine</a>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+              <h2 class="logo_title">
+                Coronavirus COVID-19 Global Cases
+             </h2>
+            <a href="#" class="navbar-brand d-flex align-items-center">
+              <img class="logo_img" src="./img/university-logo-small-horizontal-white-no-clear-space-e44019a003.png">
+          </a>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control bg-dark text-white-50 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <table class="table">
+              <tbody class="finder">
+              </tbody>
+            </table>
+            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+          </form>
+          
+          </div>
+    </header>
+          <main>
+            <div class="container">
+                <div class="row text-center text-white-50">
+                  <div class="leftBlock col-3">
+                    <div class="zoom btn-sm bg-dark col" id="wrapperGlobal">
+                      <img id="full_screen" src="./img/full-screen.svg" alt="Full screen">
+                      <h6>Global Cases</h6>
+                      <div id="global_cases" class="text-danger">!!!</div>
+                    </div>
+                    <div id="global_cases_main" class="zoom btn-sm bg-dark col">
+                      <img id="full_screen" src="./img/full-screen.svg" alt="Full screen">
+                      <h6>Cases by Country</h6>
+                      <div id="cases"></div>
+                    </div>
+                    <div id="date" class="zoom btn-sm bg-dark col">
+                      <img id="full_screen" src="./img/full-screen.svg" alt="Full screen">
+                      Last Update at (M/D/YYYY)
+                    </div>
+                  </div>
+                  <div class="zoom centerBlock col-6">
+                    <div class="mapBlock bg-dark">
+                      <img id="full_screen" src="./img/full-screen.svg" alt="Full screen">
+                      <div id="map" class="zoom btn-sm bg-dark col">
+                        <!-- Map -->
+                      </div>
+                    </div>
+                    <div class="zoom graphBlock bg-dark">
+                      <div id="graph" class="btn-sm bg-dark col">
+                        <img id="full_screen" src="./img/full-screen.svg" alt="Full screen">
+                        <div class="slider">
+                          <div class="slider__wrapper">
+                            <div class="slider__item">
+                              <canvas id="chart" width="200" height="45"></canvas>
+                            </div>
+                            <div class="slider__item">
+                              <canvas id="chart1" width="200" height="45"></canvas>
+                            </div>
+                            <div class="slider__item">
+                              <canvas id="chart2" width="200" height="45"></canvas>
+                            </div>      
+                          </div>
+                          <a class="slider__control slider__control_left" href="#" role="button"></a>
+                          <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+                        </div>
+                    </div>
+                  </div>
+                      </div>
+                      <div class="rightBlock col-3">
+                        <div id="global_deaths_main" class="zoom btn-sm bg-dark col">
+                          <img id="full_screen" src="./img/full-screen.svg" alt="Full screen">
+                          <h6>Global Deaths</h6>
+                          <div id="global_deaths" class="text-white">!!!</div>
+                        </div>
+                        <div  id="global_recovered_main" class="zoom btn-sm bg-dark col">
+                          <img id="full_screen" src="./img/full-screen.svg" alt="Full screen">
+                         <span id="country"></span>
+                         <h6>Global Recovered</h6> 
+                         <div id="global_recovered" class="text-white">!!!</div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </main>
+          <footer class="bg-dark d-flex justify-content-between align-items-center text-white">
+            <div class="p-2 bd-highlight">
+               <a href="https://github.com/MonkeyKingBar-bit">&copy; MonkeyKingBar-bit</a>
+            </div>
+            <div class="p-2 bd-highlight">
+                <a href="https://rs.school/js/"><img class="footer_img" src="./img/rs_school_js.svg"></a>
+            </div>
+            <div class="p-2 bd-highlight">
+                <h6>2020</h6>
+            </div> 
+        </footer>
+        <div id="overlay"></div>
+</body>
+</html>

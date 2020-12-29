@@ -1,0 +1,41 @@
+.logo_img {
+  width: 100px;
+}
+
+.logo_title {
+  color: silver;
+}
+  
+header {
+  z-index: 1;
+}
+
+p #about {
+  margin-top: 1rem;
+}
+
+#about {
+  text-decoration: overline;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutContent a {
+  display: block;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.25s;
+}
+
+.aboutContent a:hover {
+  background-color: #343a40;
+  color: black;
+}
