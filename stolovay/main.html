@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Столовая.РУ</title>
 </head>
 <body>
-<header>
-    <div class="wrapper">
+<div class="wrapper">
+    <header>
         <nav>
             <ul class="menu">
                 <li class="menu__item"><a href="" class="menu__link">Компания</a></li>
@@ -22,7 +23,7 @@
                 <li class="menu__item"><a href="" class="menu__link">Сервис</a></li>
                 <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
                 <li class="menu__item"><a href="" class="menu__link">
-                    <img src="./assets/icons/e-mail.png" alt="contact-info">
+                    <img src="./assets/icons/email.svg" alt="contact-info">
                     <p>info@stolovay.ru</p>
                 </a></li>
                 <li class="menu__item"><a href="" class="menu__link">
@@ -31,14 +32,30 @@
                 </a></li>
             </ul>
         </nav>
-
-    </div>
 </header>
-<div class="header">
+    <div class="header">
     <div class="logo">
         <img src="./assets/icons/logo.svg" alt="logo">
-        <span>Столовая.РУ</span>
+        <strong>Столовая.РУ</strong>
     </div>
+    <form class="select-form">
+        <select size="1">
+            <option selected value="Все">Все</option>
+            <option disabled>Выберите категорию:</option>
+            <option value="Тепловое">Тепловое</option>
+            <option value="Холодильное">Холодильное</option>
+            <option value="Электромеханическое">Электромеханическое</option>
+            <option value="Посудомоечное">Посудомоечное</option>
+            <option value="Барное">Барное</option>
+            <option value="Хлебопекарное">Хлебопекарное</option>
+            <option value="Линии раздачи">Линии раздачи</option>
+            <option value="Нейтральное">Нейтральное</option>
+            <option value="Для фаст фуда">Для фаст фуда</option>
+            <option value="Для залов">Для залов</option>
+            <option value="Весовое">Весовое</option>
+
+        </select>
+    </form>
     <form class="search-form">
         <input class="input">
         <button class="button">
@@ -54,6 +71,105 @@
         <p>Сумма</p>
         <p>150 000 руб.</p>
     </div>
+    </div>
+    <main>
+        <ul class="catalog">
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/warm.svg" alt="Тепловое">
+                <p>Тепловое</p>
+            </a></li>
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/refrigerator.svg" alt="Холодильное">
+                <p>Холодильное</p>
+            </a></li>
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/electromechanical.svg" alt="Электромеханическое">
+                <p>Электромеханическое</p>
+            </a></li>
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/dishwashers.svg" alt="Посудомоечное">
+                <p>Посудомоечное</p>
+            </a></li>
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/bakery.svg" alt="Хлебопекарное">
+                <p>Хлебопекарное</p>
+            </a></li>
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/distribution.svg" alt="Линии раздачи">
+                <p>Линии раздачи</p>
+            </a></li>
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/neutral.svg" alt="Нейтральное">
+                <p>Нейтральное</p>
+            </a></li>
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/fastfood.svg" alt="Для фаст фуда">
+                <p>Для фаст фуда</p>
+            </a></li>
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/hall.svg" alt="Для залов">
+                <p>Для залов</p>
+            </a></li>
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/weight.svg" alt="Вспомогательное">
+                <p>Вспомогательное</p>
+            </a></li>
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/shop.svg" alt="Для магазинов">
+                <p>Для магазинов</p>
+            </a></li>
+        </ul>
+        <section class="first">
+            <ul class="categories">
+                <li class="categories-name">Целевые предложения</li>
+                <li class="categories__item"><a href="" class="categories__link">
+                    <p>Кафе, барам, ресторанам</p>
+                    <span>&#62;</span></a></li>
+                <li class="categories__item"><a href="" class="categories__link">
+                    <p>Детским садам и школам</p>
+                    <span>&#62;</span></a></li>
+                <li class="categories__item"><a href="" class="categories__link">
+                    <p>Таблет-питание</p>
+                    <span>&#62;</span></a></li>
+                <li class="categories__item"><a href="" class="categories__link">
+                    <p>Для столовых</p>
+                    <span>&#62;</span></a></li>
+                <li class="categories__item"><a href="" class="categories__link">
+                    <p>Для пищеблоков</p>
+                    <span>&#62;</span></a></li>
+                <li class="categories__item"><a href="" class="categories__link">
+                    <p>Государственным заказам</p>
+                    <span>&#62;</span></a></li>
+                <li class="categories__item"><a href="" class="categories__link">
+                    <p>Для магазинов</p>
+                    <span>&#62;</span></a></li>
+                <li class="categories__item"><a href="" class="categories__link">
+                    <p>Для войсковых частей</p>
+                    <span>&#62;</span></a></li>
+                <li class="categories__item"><a href="" class="categories__link">
+                    <p>Все предложения</p>
+                    <span>&#62;</span></a></li>
+            </ul>
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <p>Портфолио</p>
+                        <strong>НИИ скорой помощи им. Н.В.Склифосовского</strong>
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="sales">
+                <img src="./assets/picture/giftbox.png" alt="gift">
+                <p>Самые низкие цены</p>
+                <strong>Распродажа</strong>
+                <a class="sales__link" href="">Каталог распродаж &#62;</a>
+            </div>
+        </section>
+    </main>
 </div>
 </body>
 </html>

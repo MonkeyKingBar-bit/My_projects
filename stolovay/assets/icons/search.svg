@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 22" width="21" height="22">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #ffffff;stroke-width: 2 } 
+	</style>
+	<g id="меню">
+		<g id="поиск">
+			<path id="лпа" class="shp0" d="M12.65 14.35L13.35 13.65L20.35 20.65L19.65 21.35L12.65 14.35ZM12.65 13.35L13.35 12.65L20.35 19.65L19.65 20.35L12.65 13.35ZM8.5 0C13.19 0 17 3.81 17 8.5C17 13.19 13.19 17 8.5 17C3.81 17 0 13.19 0 8.5C0 3.81 3.81 0 8.5 0Z" />
+		</g>
+	</g>
+</svg>

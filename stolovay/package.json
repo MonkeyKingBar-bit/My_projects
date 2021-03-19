@@ -1,0 +1,7 @@
+{
+  "name": "stolovay",
+  "version": "1.0.0",
+  "dependencies": {
+    "swiper": "^6.5.0"
+  }
+}
