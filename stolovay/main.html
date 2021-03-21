@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script src="script.js" defer></script>
     <title>Столовая.РУ</title>
 </head>
@@ -34,11 +38,11 @@
         </nav>
 </header>
     <div class="header">
-    <div class="logo">
+        <div class="logo">
         <img src="./assets/icons/logo.svg" alt="logo">
         <strong>Столовая.РУ</strong>
     </div>
-    <form class="select-form">
+        <form class="select-form">
         <select size="1">
             <option selected value="Все">Все</option>
             <option disabled>Выберите категорию:</option>
@@ -56,17 +60,17 @@
 
         </select>
     </form>
-    <form class="search-form">
+        <form class="search-form">
         <input class="input">
         <button class="button">
             <img src="./assets/icons/search.svg" alt="search">
         </button>
     </form>
-    <div class="portal">
+        <div class="portal">
         <img src="./assets/icons/portal.png" alt="portal-icon">
         <p>Мы на портале поставщиков</p>
     </div>
-    <div class="basket">
+        <div class="basket">
         <img src="" alt="basket">
         <p>Сумма</p>
         <p>150 000 руб.</p>
@@ -145,28 +149,150 @@
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
-                        <p>Портфолио</p>
-                        <strong>НИИ скорой помощи им. Н.В.Склифосовского</strong>
+                        <figure class="slide__text">
+                            <p>Портфолио</p>
+                            <strong class="slide__title">НИИ скорой помощи им. Н.В.Склифосовского</strong>
+                            <strong class="slide__subtitle">Оборудование для пищеблоков</strong>
+                            <button>Подробнее</button>
+                        </figure>
+                        <figure class="slide__image">
+                            <img src="./assets/picture/nii.png" alt="НИИ скорой помощи им. Н.В.Склифосовского">
+                        </figure>
                     </div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">
+                        <figure class="slide__text">
+                            <p>Портфолио</p>
+                            <strong class="slide__title">НИИ скорой помощи им. Н.В.Склифосовского</strong>
+                            <strong class="slide__subtitle">Оборудование для пищеблоков</strong>
+                            <button>Подробнее</button>
+                        </figure>
+                        <figure class="slide__image">
+                            <img src="./assets/picture/nii.png" alt="НИИ скорой помощи им. Н.В.Склифосовского">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="slide__text">
+                            <p>Портфолио</p>
+                            <strong class="slide__title">НИИ скорой помощи им. Н.В.Склифосовского</strong>
+                            <strong class="slide__subtitle">Оборудование для пищеблоков</strong>
+                            <button>Подробнее</button>
+                        </figure>
+                        <figure class="slide__image">
+                            <img src="./assets/picture/nii.png" alt="НИИ скорой помощи им. Н.В.Склифосовского">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="slide__text">
+                            <p>Портфолио</p>
+                            <strong class="slide__title">НИИ скорой помощи им. Н.В.Склифосовского</strong>
+                            <strong class="slide__subtitle">Оборудование для пищеблоков</strong>
+                            <button>Подробнее</button>
+                        </figure>
+                        <figure class="slide__image">
+                            <img src="./assets/picture/nii.png" alt="НИИ скорой помощи им. Н.В.Склифосовского">
+                        </figure>
+                    </div>
                     ...
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
 
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
             </div>
             <div class="sales">
                 <img src="./assets/picture/giftbox.png" alt="gift">
                 <p>Самые низкие цены</p>
                 <strong>Распродажа</strong>
                 <a class="sales__link" href="">Каталог распродаж &#62;</a>
+            </div>
+        </section>
+        <section class="brend">
+            <ul class="logo-brend">
+                <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/abat.svg" alt="Abat"></a></li>
+                <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/atesy.svg" alt="Atesy"></a></li>
+                <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/hitcold.svg" alt="Hit Cold"></a></li>
+                <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/rational.svg" alt="Rational"></a></li>
+                <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/simeco.svg" alt="Simeco"></a></li>
+                <li class="logo-brend__item"><a href="" class="logo-brend__link">Все бренды</a></li>
+                </ul>
+        </section>
+        <section class="news">
+            <p>Новости производителей</p>
+            <div class="all-news">
+                <div class="news__first">
+                    <img src="./assets/picture/abat.png" alt="Abat">
+                    <div class="news__date">
+                        <p>Abat</p>
+                        <p>22.06.17</p>
+                    </div>
+                    <p class="news-title">Новый разборный ротационный пекарский
+                        шкаф РПШ-18-8-6МР</p>
+                    <p class="news-subtitle">Новый разборный ротационный пекарский шкаф РПШ-18-8-6МР:  в комплекте тележка-шпилька ТШГ-18 на 18 уровней 600х800 мм вместимость тележки-шпильки - 135 хлебных форм №7
+                        инжекционный тип парообразования разборная конструкция увеличенное стекло двери. Память на 110 программ (до 4-ех этапов в каждой программе)</p>
+                </div>
+                <div class="news__second">
+                    <div>
+                        <img src="./assets/picture/abat1.png" alt="Abat1">
+                        <div class="news__text">
+                            <div class="news__date">
+                                <p>Abat</p>
+                                <p>22.06.17</p>
+                            </div>
+                            <p class="news-title">Повышение энергоэффективности туннельных посудомоечных машин МПТ торговой марки Abat</p>
+                            <p class="news-subtitle">С целью снижения нагрузки на электрическую сеть и для повышения энергоэффективности изделий с 1 июня 2017 года был изменен алгоритм работы туннельных посудомоечных машин
+                                МПТ торговой марки Abat всех моделей...</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/picture/abat2.png" alt="Abat2">
+                        <div class="news__text">
+                            <div class="news__date">
+                                <p>Abat</p>
+                                <p>22.06.17</p>
+                            </div>
+                            <p class="news-title">Повышение энергоэффективности туннельных посудомоечных машин МПТ торговой марки Abat</p>
+                            <p class="news-subtitle">С целью снижения нагрузки на электрическую сеть и для повышения энергоэффективности изделий с 1 июня 2017 года был изменен алгоритм работы</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/picture/abat3.png" alt="Abat3">
+                        <div class="news__text">
+                            <div class="news__date">
+                                <p>Abat</p>
+                                <p>22.06.17</p>
+                            </div>
+                            <p class="news-title">Повышение энергоэффективности туннельных посудомоечных машин МПТ торговой марки Abat</p>
+                            <p class="news-subtitle">С целью снижения нагрузки на электрическую сеть и для повышения энергоэффективности изделий с 1 июня 2017 года был изменен алгоритм работы туннельных посудомоечных машин
+                                МПТ торговой марки Abat всех моделей...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>Все новости</button>
+        </section>
+        <section class="recommended">
+            <p>Рекомендуем</p>
+            <div class="recommended__list">
+                <div>
+                    <p>Rational</p>
+                    <p>Пароконвектоматы</p>
+                    <p>Педантичность и преданность своему делу делает продукцию Rational идеальной для тех, кто ищет надежность и долговечность.</p>
+                    <img src="./assets/picture/rational.png" alt="Rational">
+                </div>
+                <div class="recommended__item">
+                    <div>
+                        <p>Abat</p>
+                        <p>Тепловое оборудование</p>
+                        <p>Более 55 лет успешно работает на рынке торгово-технологического оборудования, по праву занимая лидирующее положение в данном сегменте.</p>
+                        <img src="./assets/picture/abatpic.png" alt="Abat">
+                    </div>
+                    <div>
+                        <p>Hicold</p>
+                        <p>Холодильные столы</p>
+                        <p>Многофункциональность оборудования позволяет оптимизировать пространство на кухне, сделать работу персонала максимально удобной и эффективной.</p>
+                        <img src="./assets/picture/hicold.png" alt="Hicold">
+                    </div>
+                </div>
             </div>
         </section>
     </main>
