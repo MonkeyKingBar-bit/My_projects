@@ -1,6 +1,7 @@
 $header-menu: #00a94b;
 $header-search: #e8e6e6;
 $catalog: #ffffff;
+$footer: #232323;
 
 * {
   margin: 0;
@@ -132,5 +133,38 @@ nav {
 /*RECOMMENDED*/
 .recommended {
   margin: 240px 261px 0 269px;
+}
+
+.recommended__list {
   display: flex;
 }
+
+.recommended__content {
+  display: flex;
+}
+
+/*SEO*/
+.seo {
+  margin: 171px 307px 0 262px;
+  display: flex;
+}
+
+/*FOOTER*/
+.footer {
+  margin-top: 172px;
+  background-color: $footer;
+}
+
+.footer__list {
+  padding: 93px 264px 108px 262px;
+  display: flex;
+}
+
+.footer__block {
+  list-style-type: none;
+}
+
+.footer__link {
+  text-decoration: none;
+}
+
