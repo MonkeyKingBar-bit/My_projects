@@ -149,7 +149,71 @@ nav {
   display: flex;
 }
 
-/*FOOTER*/
+.seo__title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #121212;
+  padding-bottom: 20px;
+}
+
+.seo__subtitle, .seo__text > p:nth-child(4) {
+  font-size: 18px;
+  color: #121212;
+  padding-bottom: 20px;
+}
+
+.seo__title2 {
+  font-size: 40px;
+  color: #121212;
+  letter-spacing: 0.2rem;
+  padding-bottom: 20px;
+}
+
+.seo__button {
+  width: 49px;
+  height: 49px;
+  border: none;
+  border-radius: 24px;
+  background-color: #232323;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.logo__title {
+  font-size: 40px;
+  color: #121212;
+}
+
+.logo__subtitle {
+  font-size: 18px;
+  color: grey;
+  padding-bottom: 20px;
+}
+
+.seo__logo {
+  padding-left: 258px;
+}
+
+.seo__logo p:nth-child(4) {
+  font-size: 20px;
+  color: #121212;
+}
+
+.seo__logo p:nth-child(5) {
+  font-size: 18px;
+  color: grey;
+  padding-bottom: 20px;
+}
+
+.seo__logo p:nth-child(6),
+.seo__logo p:nth-child(7),
+.seo__logo p:nth-child(8)  {
+  font-size: 18px;
+  color: #121212;
+}
+
+  /*FOOTER*/
 .footer {
   margin-top: 172px;
   background-color: $footer;
