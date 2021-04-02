@@ -96,7 +96,7 @@ nav {
   font-weight: 300;
 }
 
-.brend {
+.brand {
   margin: 19px 187px 0;
 }
 
@@ -128,15 +128,131 @@ nav {
 
 /*RECOMMENDED*/
 .recommended {
-  margin: 240px 261px 0 269px;
+  margin: 169px 260px 171px 269px;
+}
+
+.recommended__text {
+  margin: 0 360px 65px;
+  text-align: center;
+}
+
+.recommended__title {
+  padding-bottom: 15px;
+  font-size: 40px;
+  color: black;
+}
+
+.recommended__subtitle {
+  margin-bottom: 5px;
+  font-size: 15.5px;
+  color: grey;
 }
 
 .recommended__list {
   display: flex;
 }
 
+.recommended__item-left {
+  margin-right: 12px;
+  height: 764px;
+  overflow: hidden;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.recommended__item-left p:first-child {
+  padding: 68px 0 15px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #121212;
+  text-transform: uppercase;
+}
+
+.recommended__item-left p:nth-child(2) {
+  padding-bottom: 29px;
+  font-size: 30px;
+  color: #121212;
+}
+
+.recommended__item-left p:nth-child(3) {
+  padding: 0 161px 39px 150px;
+  font-size: 16px;
+  color: #777777;
+  font-weight: 300;
+}
+
 .recommended__content {
   display: flex;
+}
+
+.recommended__content:nth-child(1) {
+  width: 784px;
+  overflow: hidden;
+  background-color: #232323;
+}
+
+.recommended__content:nth-child(1) img {
+  margin-left: -200px;
+  height: 420px;
+}
+
+.recommended__item-right > div:nth-child(1) div {
+  margin: 121px 143px 127px 57px;
+}
+
+.recommended__content:nth-child(1) div p:nth-child(1) {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.recommended__content:nth-child(1) div p:nth-child(2) {
+  padding: 14px 202px 26px 0;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.recommended__content:nth-child(1) div p:nth-child(3) {
+  font-size: 16px;
+  color: #777777;
+  font-weight: 300;
+}
+
+.recommended__content:nth-child(2) {
+  margin-top: 8px;
+  height: 317px;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  background-color: #ffffff;
+}
+
+.recommended__content:nth-child(2) img {
+  margin-bottom: -87px;
+  margin-right: -95px;
+}
+
+.recommended__content:nth-child(2) div {
+  margin: 97px 48px 67px 63px;
+}
+
+.recommended__content:nth-child(2) div p:first-child {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #121212;
+  font-weight: 300;
+}
+
+.recommended__content:nth-child(2) div p:nth-child(2) {
+  padding: 14px 0 26px 0;
+  font-size: 30px;
+  color: #121212;
+}
+
+.recommended__content:nth-child(2) div p:nth-child(3) {
+  font-size: 16px;
+  color: #777777;
+  font-weight: 300;
 }
 
 /*SEO*/
