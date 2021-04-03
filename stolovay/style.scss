@@ -100,34 +100,116 @@ nav {
   font-weight: 300;
 }
 
+/*BRAND*/
 .brand {
   margin: 19px 187px 0;
+  background-color: #ffffff;
 }
 
 .logo-brend {
+  padding: 17px 55px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
 }
 
-/*NEWS*/
+.logo-brend span {
+  width: 1px;
+  height: 71px;
+  background-color: lightgrey;
+  border: 1px solid #e8e7e7;
+  opacity: 25%;
+}
+
+.logo-brend li:last-child a {
+  font-size: 18px;
+  line-height: 40px;
+  color: #232323;
+  text-decoration: none;
+}
+
+  /*NEWS*/
 .news {
   margin: 173px 252px 0 249px;
+}
+
+.news p:first-child {
+  margin-bottom: 25px;
+  font-size: 40px;
+  color: #121212;
 }
 
 .all-news {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.news__first {
+  width: 488px;
+}
+
+.news__date {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+.news__date p:first-child {
+  margin-top: 28px;
+  font-size: 16px;
+  color: #00aa4b;
+  font-weight: 300;
+}
+
+.news__date p:nth-child(2) {
+  color: grey;
+}
+
+.news-title {
+  font-size: 20px;
+  color: black;
+  font-weight: 300;
+}
+
+.news-subtitle {
+  margin-top: 28px;
+  font-size: 15.5px;
+  font-weight: 200;
+}
+
+.news__second {
+  margin-left: 106px;
 }
 
 .news__second div {
   display: flex;
 }
 
+.news__second > div {
+  margin-bottom: 43px;
+}
+
+.news__second div img {
+  height: 168px;
+}
+
+.news__second .news__date > p:first-child {
+  margin: 0 0 10px 0;
+}
+
 .news__text {
+  padding-left: 20px;
   flex-direction: column;
+}
+
+.news__button {
+  padding: 9px 40px 9px;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 20px;
+  outline: none;
 }
 
 /*RECOMMENDED*/
