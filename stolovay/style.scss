@@ -11,7 +11,7 @@ $footer-copyright: #191919;
 
 html {
   background: #f5f2f2;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Myriad Pro", system-ui, sans-serif;
 }
 
 .wrapper {
@@ -60,7 +60,7 @@ nav {
   margin-bottom: 7px;
 }
 
-/*THE FIRST SECTION*/
+/*CATEGORIES*/
 .first {
   margin: 19px 188px 19px 184px;
   display: flex;
@@ -69,17 +69,41 @@ nav {
 
 .categories {
   list-style-type: none;
+  background-color: #ffffff;
+}
+
+.categories-name {
+  margin: 34px 22px 9px 27px;
+  font-size: 24px;
+  line-height: 45px;
+  color: #ffaf2d;
+}
+
+.categories__item {
+  margin: 0 22px 0 27px;
+}
+
+.categories__link span {
+  font-size: 14px;
+  line-height: 45px;
+  color: #303030;
+  opacity: 35%;
 }
 
 .categories__link {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
+  font-size: 16px;
+  line-height: 45px;
+  color: #303030;
+  font-weight: 300;
 }
 
+/*SLIDER-SWIPER*/
 .swiper-container {
-  padding: 0 20px 4px 21px;
-  height: 476px;
+  margin: 0 20px 4px 20px;
+  height: 478px;
   width: 902px;
   background-color: #232323;
 }
@@ -88,8 +112,57 @@ nav {
   display: flex;
 }
 
+.swiper-slide__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide__text {
+  margin: 60px 0 0 67px;
+  padding-bottom: 71px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide__text p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #777777;
+  font-weight: 300;
+}
+
+.slide__title {
+  margin: 73px 0 20px;
+  font-size: 35px;
+  line-height: 42px;
+  color: #f3f1f1;
+  font-weight: normal;
+}
+
+.slide__subtitle {
+  margin-bottom: 66px;
+  font-size: 18px;
+  color: #f3f1f1;
+  font-weight: normal;
+}
+
+.slide__text button {
+  width: 129px;
+  padding: 9px 21px;
+  border: none;
+  border-radius: 18px;
+  background-color: #ffaf2d;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.slide__image {
+  margin: 73px 82px 0 71px;
+}
+
 .slide__image img {
-  max-width: 100%;
+  width: 256px;
+  height: 357px;
 }
 
 .swiper-container .swiper-button-prev::after,
@@ -98,6 +171,22 @@ nav {
   line-height: 60px;
   color: #ffffff;
   font-weight: 300;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+  bottom: 30px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid #232323;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 5px;
+  background-color: #000000;
+  border: 1px solid #ffffff;
 }
 
 /*BRAND*/
