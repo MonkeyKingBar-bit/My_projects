@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <!-- BOOTSTRAP -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- SWIPER -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -39,42 +43,49 @@
 </header>
     <div class="header">
         <div class="logo">
-        <img src="./assets/icons/logo.svg" alt="logo">
-        <strong>Столовая.РУ</strong>
-    </div>
-        <form class="select-form">
-        <select size="1">
-            <option selected value="Все">Все</option>
-            <option disabled>Выберите категорию:</option>
-            <option value="Тепловое">Тепловое</option>
-            <option value="Холодильное">Холодильное</option>
-            <option value="Электромеханическое">Электромеханическое</option>
-            <option value="Посудомоечное">Посудомоечное</option>
-            <option value="Барное">Барное</option>
-            <option value="Хлебопекарное">Хлебопекарное</option>
-            <option value="Линии раздачи">Линии раздачи</option>
-            <option value="Нейтральное">Нейтральное</option>
-            <option value="Для фаст фуда">Для фаст фуда</option>
-            <option value="Для залов">Для залов</option>
-            <option value="Весовое">Весовое</option>
+            <img src="./assets/icons/logo.svg" alt="logo">
+            <p>Столовая.РУ</p>
+        </div>
 
-        </select>
-    </form>
-        <form class="search-form">
-        <input class="input">
-        <button class="button">
-            <img src="./assets/icons/search.svg" alt="search">
-        </button>
-    </form>
+        <div class="container">
+            <div class="row searchFilter" >
+                <div class="col-sm-12" >
+                    <div class="input-group" >
+                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                            <span class="label-icon" >Все</span> <span class="caret" >&nbsp;</span></button>
+                        <div class="dropdown-menu dropdown-menu-right" >
+                            <ul class="category_filters" >
+                                <li disabled="Выберите категорию:">Выберите категорию:</li>
+                                <li><a href="#">Тепловое</a></li>
+                                <li><a href="#">Холодильное</a></li>
+                                <li><a href="#">Электромеханическое</a></li>
+                                <li><a href="#">Посудомоечное</a></li>
+                                <li><a href="#">Барное</a></li>
+                                <li><a href="#">Хлебопекарное</a></li>
+                                <li><a href="#">Линии раздачи</a></li>
+                                <li><a href="#">Нейтральное</a></li>
+                                <li><a href="#">Для фаст фуда</a></li>
+                                <li><a href="#">Для залов</a></li>
+                                <li><a href="#">Весовое</a></li>
+                            </ul>
+                        </div>
+                        <input id="table_filter" type="text" class="form-control" aria-label="Text input with segmented button dropdown" >
+                            <button id="searchBtn" type="button" class="btn btn-secondary btn-search">
+                                <img src="./assets/icons/search.svg" alt="search">
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="portal">
-        <img src="./assets/icons/portal.png" alt="portal-icon">
-        <p>Мы на портале поставщиков</p>
-    </div>
+            <img src="./assets/icons/portal.png" alt="portal-icon">
+            <p>Мы на портале поставщиков</p>
+        </div>
         <div class="basket">
-        <img src="" alt="basket">
-        <p>Сумма</p>
-        <p>150 000 руб.</p>
-    </div>
+            <img src="./assets/icons/baske.svg" alt="basket">
+            <p>Сумма</p>
+            <p>150 000 руб.</p>
+        </div>
     </div>
     <main>
         <ul class="catalog">
@@ -202,9 +213,11 @@
             </div>
             <div class="sales">
                 <img src="./assets/picture/giftbox.png" alt="gift">
-                <p>Самые низкие цены</p>
-                <strong>Распродажа</strong>
-                <a class="sales__link" href="">Каталог распродаж &#62;</a>
+                <div class="sales__text">
+                    <p>Самые низкие цены</p>
+                    <p>Распродажа</p>
+                    <a class="sales__link" href="">Каталог распродаж &#62;</a>
+                </div>
             </div>
         </section>
         <section class="brand">
