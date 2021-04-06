@@ -42,10 +42,10 @@
         </nav>
 </header>
     <div class="header">
-        <div class="logo">
+        <a class="logo" href="#">
             <img src="./assets/icons/logo.svg" alt="logo">
             <p>Столовая.РУ</p>
-        </div>
+        </a>
 
         <div class="container">
             <div class="row searchFilter" >
@@ -77,14 +77,19 @@
                 </div>
             </div>
         </div>
-        <div class="portal">
+        <a class="portal" href="#">
             <img src="./assets/icons/portal.png" alt="portal-icon">
             <p>Мы на портале поставщиков</p>
-        </div>
+        </a>
         <div class="basket">
-            <img src="./assets/icons/baske.svg" alt="basket">
-            <p>Сумма</p>
-            <p>150 000 руб.</p>
+            <div class="basket__count">
+                <p id="basket__col">12</p>
+                <img src="./assets/icons/baske.svg" alt="basket">
+            </div>
+            <div class="basket__text">
+                <p>Сумма</p>
+                <p id="basket__sum">150 000 руб.</p>
+            </div>
         </div>
     </div>
     <main>
