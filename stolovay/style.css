@@ -7,6 +7,10 @@ p {
   margin: 0 !important;
 }
 
+ul {
+  margin-bottom: 0 !important;
+}
+
 body {
   background: #f5f2f2 !important;
   font-family: "Myriad Pro", system-ui, sans-serif !important;
@@ -52,7 +56,7 @@ nav {
 
 /*HEADER 2*/
 .header {
-  padding: 12px 191px;
+  padding: 0 184px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,14 +64,13 @@ nav {
 }
 
 .logo {
+  padding-top: 12px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .logo img {
-  width: 40px;
-  height: 100%;
+  width: 56px;
+  height: 56px;
 }
 
 .logo p {
@@ -345,7 +348,7 @@ nav {
 
 /*CATALOG*/
 .catalog {
-  padding: 9px 191px 12px 191px;
+  padding: 9px 184px 12px;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -393,7 +396,7 @@ nav {
 
 .categories__link span {
   font-size: 14px;
-  line-height: 45px;
+  line-height: 44px;
   color: #303030;
   opacity: 35%;
 }
@@ -401,6 +404,7 @@ nav {
 .categories__link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-decoration: none;
   font-size: 16px;
   color: #303030;
@@ -409,7 +413,7 @@ nav {
 
 /*SLIDER-SWIPER*/
 .swiper-container {
-  margin: 0 20px 4px;
+  margin: 0 20px;
   height: 478px;
   width: 851px;
   background-color: #232323;
@@ -520,7 +524,7 @@ nav {
 }
 
 .sales__text p:nth-child(2) {
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
   font-size: 40px;
   line-height: 30px;
   color: #121212;
@@ -531,7 +535,6 @@ nav {
   text-decoration: none;
   font-size: 18px;
   line-height: 30px;
-  color: #121212;
   font-weight: 300;
   color: orange;
 }
@@ -923,6 +926,18 @@ nav {
   line-height: 29px;
   color: #ffffff;
   font-weight: 300;
+}
+
+/*MEDIA*/
+@media (min-width: 767px) {
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu__item {
+    padding: 10px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
