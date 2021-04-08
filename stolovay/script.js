@@ -1,7 +1,7 @@
 "use strict"
 
-/*SLIDER*/
-new Swiper('.swiper-container', {
+/* SLIDER */
+const swiper = new Swiper('.swiper-container', {
     // Optional parameters
 
     pagination: {
@@ -14,7 +14,7 @@ new Swiper('.swiper-container', {
     },
 });
 
-/*MOBILE*/
+/* MOBILE */
 const isMobile = {
     Android: function () {
         return navigator.userAgent.match(/Android/i);
@@ -40,10 +40,20 @@ const isMobile = {
             isMobile.Windows());
     }
 };
-
-//check device
+// check device
 if (isMobile.any()) {
     document.body.classList.add('_touch');
 }else{
     document.body.classList.add('_pc')
 }
+
+/* BURGER MENU */
+    const iconMenu = document.querySelector('.menu__icon');
+    if (iconMenu) {
+        const menuBody = document.querySelector('.menu__body');
+        iconMenu.addEventListener("click", function (e) {
+            document.body.classList.toggle('_lock');
+            iconMenu.classList.toggle('_active');
+            menuBody.classList.toggle('_active');
+        })
+    };

@@ -16,7 +16,9 @@ body {
   background: #f5f2f2 !important;
   font-family: "Myriad Pro", system-ui, sans-serif !important;
 }
-
+body._lock {
+  overflow: hidden;
+}
 .wrapper {
   min-height: 100%;
   margin: 0 auto;
@@ -27,7 +29,11 @@ header {
   background-color: $header-menu;
 }
 
-nav {
+.menu__icon {
+  display: none;
+}
+
+.menu__body {
   padding: 18px 184px 15px 184px;
 }
 
@@ -180,103 +186,6 @@ nav {
 
 .searchFilter .dropdown-menu .category_filters label {
   margin-left: 15px;
-}
-
-@media (min-width: 1400px) {
-  .ct-header .ct-jumbotron .inner {
-    max-width: 470px;
-    min-height: 230px;
-  }
-}
-@media (max-width: 1400px) {
-  .ct-header-slider .item {
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center top;
-  }
-}
-@media (min-width: 769px) and (max-width: 1400px) {
-  .ct-header-slider .item {
-    height: auto;
-  }
-}
-@media (max-width: 1260px) {
-  #dots-container {
-    display: none;
-  }
-}
-@media (min-width: 992px){
-  .ct-footer2 .ct-newsletter {
-    max-width: 100%;
-  }
-  #dots-container {
-    bottom: 100px;
-  }
-}
-@media (min-width: 768px){
-  .ct-searchbar:before {
-    height: 92px;
-    bottom: -1px;
-  }
-  .page-scrolled .navbar .navbar-nav li > * {
-    min-height: 67px;
-    height: 67px;
-  }
-  .page-scrolled .navbar .navbar-nav {
-    height: 100%!important;
-  }
-  .ct-current-facts h2 {
-    margin: 0 auto 0px;
-  }
-  .contentNews .ct-recent-news {
-    flex-direction: inherit;
-  }
-  .contentFaq .faq_question .col-sm-11 {
-    padding-right: 0px;
-  }
-  .peopleDetail h2 {
-    margin-top: -5px;
-  }
-  .searchFilter .btn {
-  }
-  .searchFilter .label-icon {
-    display: inline-block;
-  }
-  .searchFilter .glyphicon {
-    margin-right: -5px;
-  }
-  .ct-header .ct-jumbotron {
-    top: 0;
-    margin-top: 5%;
-  }
-  .ct-header .ct-jumbotron h1 {
-    font-size: 2.5em;
-  }
-  .ct-news.ct-news--bigger h3 {
-    font-size: 41px;
-    line-height: 1.4;
-  }
-}
-
-@media (max-width: 768px){
-  .ct-header .ct-jumbotron {
-    width: 80%;
-    margin: 20px 10px;
-    top: 40%;
-    width: 95%;
-  }
-  .ct-header .ct-jumbotron .inner {
-    max-width: 100%;
-  }
-  #dots-container {
-    display: none;
-  }
-  .main-section {
-    margin-top: -80px;
-  }
-  .searchFilter .dropdown-menu-right {
-    right: 0px;
-  }
 }
 
 /*PORTAL*/
@@ -900,8 +809,39 @@ nav {
   color: #ffffff;
   font-weight: 300;
 }
-
+/* ------------------- */
 /*MEDIA*/
+@media (min-width: 1400px) {
+  .ct-header .ct-jumbotron .inner {
+    max-width: 470px;
+    min-height: 230px;
+  }
+}
+@media (max-width: 1400px) {
+  .ct-header-slider .item {
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}
+@media (min-width: 769px) and (max-width: 1400px) {
+  .ct-header-slider .item {
+    height: auto;
+  }
+}
+@media (max-width: 1260px) {
+  #dots-container {
+    display: none;
+  }
+}
+@media (min-width: 992px){
+  .ct-footer2 .ct-newsletter {
+    max-width: 100%;
+  }
+  #dots-container {
+    bottom: 100px;
+  }
+}
 @media (min-width: 767px) {
   .menu {
     display: flex;
@@ -909,5 +849,157 @@ nav {
   }
   .menu__item {
     padding: 10px 0;
+  }
+}
+@media (max-width: 767px) {
+  /* HEADER */
+  .menu__icon {
+    display: block;
+    z-index: 10000;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    margin: 37px 50px;
+  }
+  .menu__icon span,
+  .menu__icon::before,
+  .menu__icon::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #ffffff;
+  }
+  .menu__icon::before,
+  .menu__icon::after {
+    content: "";
+  }
+  .menu__icon::before {
+    top: 0;
+  }
+  .menu__icon::after {
+    bottom: 0;
+  }
+  .menu__icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+  .menu__icon._active span{
+    transform: scale(0) translate(0px, -50%);
+  }
+  .menu__icon._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+  .menu__icon._active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+  .menu__body {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.9);
+    padding: 100px 30px 30px 30px;
+    transition: left 0.3s ease 0s;
+    overflow: auto;
+  }
+  .menu__body._active {
+    left: 0;
+  }
+  .menu__body::before {
+    content: "";
+    position: fixed;
+    width: 73px;
+    top: 0;
+    left: 0;
+    height: 73px;
+    border-radius: 37px;
+    background-color: #fda11c;
+    z-index: 2;
+    margin: 12px 31px 15px 29px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu span {
+    display: none;
+  }
+  .menu__item:last-child {
+    margin-bottom: 0;
+  }
+  .menu__link {
+    font-size: 24px;
+  }
+  .menu__item:nth-child(12),
+  .menu__item:nth-child(13) {
+    display: none;
+  }
+  /* SEARCH - PANEL */
+  .ct-header .ct-jumbotron {
+    width: 80%;
+    margin: 20px 10px;
+    top: 40%;
+    width: 95%;
+  }
+  .ct-header .ct-jumbotron .inner {
+    max-width: 100%;
+  }
+  #dots-container {
+    display: none;
+  }
+  .main-section {
+    margin-top: -80px;
+  }
+  .searchFilter .dropdown-menu-right {
+    right: 0px;
+  }
+  .ct-searchbar:before {
+    height: 92px;
+    bottom: -1px;
+  }
+  .page-scrolled .navbar .navbar-nav li > * {
+    min-height: 67px;
+    height: 67px;
+  }
+  .page-scrolled .navbar .navbar-nav {
+    height: 100%!important;
+  }
+  .ct-current-facts h2 {
+    margin: 0 auto 0px;
+  }
+  .contentNews .ct-recent-news {
+    flex-direction: inherit;
+  }
+  .contentFaq .faq_question .col-sm-11 {
+    padding-right: 0px;
+  }
+  .peopleDetail h2 {
+    margin-top: -5px;
+  }
+  .searchFilter .btn {
+  }
+  .searchFilter .label-icon {
+    display: inline-block;
+  }
+  .searchFilter .glyphicon {
+    margin-right: -5px;
+  }
+  .ct-header .ct-jumbotron {
+    top: 0;
+    margin-top: 5%;
+  }
+  .ct-header .ct-jumbotron h1 {
+    font-size: 2.5em;
+  }
+  .ct-news.ct-news--bigger h3 {
+    font-size: 41px;
+    line-height: 1.4;
   }
 }
