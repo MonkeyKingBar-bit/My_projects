@@ -871,8 +871,42 @@ header {
     padding: 10px 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* HEADER */
+  .header {
+    display: none;
+  }
+
+  header {
+    background-color: transparent;
+  }
+
+  .header__mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__logo img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .logo__text {
+    font-size: 30px;
+    color: #353535;
+  }
+
+  .logo__text p:last-child {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
   .menu__icon {
     display: block;
     z-index: 10000;
@@ -978,80 +1012,36 @@ header {
     display: none;
   }
 
-  /* SEARCH - PANEL */
-  .ct-header .ct-jumbotron {
-    width: 80%;
-    margin: 20px 10px;
-    top: 40%;
-    width: 95%;
+  .header__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .ct-header .ct-jumbotron .inner {
-    max-width: 100%;
+  .header__right img:first-child {
+    margin-right: 41px;
   }
 
-  #dots-container {
+  .basket {
+    margin: 0 30px 0 33px;
+  }
+
+  .basket__count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .basket__col {
+    font-size: 25px;
+    line-height: 34px;
+    color: #fda11c;
+    font-weight: 300;
+  }
+
+  /* MAIN */
+  .catalog {
     display: none;
-  }
-
-  .main-section {
-    margin-top: -80px;
-  }
-
-  .searchFilter .dropdown-menu-right {
-    right: 0px;
-  }
-
-  .ct-searchbar:before {
-    height: 92px;
-    bottom: -1px;
-  }
-
-  .page-scrolled .navbar .navbar-nav li > * {
-    min-height: 67px;
-    height: 67px;
-  }
-
-  .page-scrolled .navbar .navbar-nav {
-    height: 100% !important;
-  }
-
-  .ct-current-facts h2 {
-    margin: 0 auto 0px;
-  }
-
-  .contentNews .ct-recent-news {
-    flex-direction: inherit;
-  }
-
-  .contentFaq .faq_question .col-sm-11 {
-    padding-right: 0px;
-  }
-
-  .peopleDetail h2 {
-    margin-top: -5px;
-  }
-
-  .searchFilter .label-icon {
-    display: inline-block;
-  }
-
-  .searchFilter .glyphicon {
-    margin-right: -5px;
-  }
-
-  .ct-header .ct-jumbotron {
-    top: 0;
-    margin-top: 5%;
-  }
-
-  .ct-header .ct-jumbotron h1 {
-    font-size: 2.5em;
-  }
-
-  .ct-news.ct-news--bigger h3 {
-    font-size: 41px;
-    line-height: 1.4;
   }
 }
 
