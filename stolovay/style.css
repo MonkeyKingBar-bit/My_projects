@@ -30,10 +30,6 @@ header {
   background-color: #00a94b;
 }
 
-.header__mobile {
-  display: none;
-}
-
 .menu__icon {
   display: none;
 }
@@ -66,13 +62,16 @@ header {
   align-items: center;
 }
 
-/*HEADER 2*/
 .header {
   padding: 0 184px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #e8e7e7;
+}
+
+.header__mobile {
+  display: none;
 }
 
 .logo {
@@ -476,6 +475,10 @@ header {
   text-decoration: none;
 }
 
+.brand-logo__mobile {
+  display: none;
+}
+
 /*NEWS*/
 .news {
   margin: 173px 252px 0 249px;
@@ -565,8 +568,9 @@ header {
 }
 
 .recommended__text {
-  margin: 0 360px 65px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .recommended__title {
@@ -583,6 +587,7 @@ header {
 
 .recommended__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .recommended__item-left {
@@ -1088,7 +1093,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #f1f1f1;
-    border: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
     padding: 29px 30px 26px;
     font-size: 30px;
     line-height: 16px;
@@ -1127,16 +1132,129 @@ header {
     font-size: 26px;
   }
 
+  .logo-brend {
+    display: none;
+  }
+
   .brand {
     margin: 0 30px;
   }
 
-  .logo-brend {
+  .brand-logo__mobile {
     flex-wrap: wrap;
+    padding: 17px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
   }
 
-  .all-news {
-    flex-wrap: wrap;
+  .brand-logo__mobile img {
+    width: 218px;
+  }
+
+  .brand-logo__first,
+.brand-logo__second,
+.brand-logo__third {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .brand-logo__second {
+    border-top: 2px solid #f3f2f2;
+    border-bottom: 2px solid #f3f2f2;
+  }
+
+  .brand-logo__third li:last-child a {
+    margin-right: 28px;
+    font-size: 30px;
+    color: #282828;
+  }
+
+  .brand-logo__first span {
+    margin: 8px 0 25px 0;
+    width: 2px;
+    height: 119px;
+    background-color: lightgrey;
+    border: 1px solid #e8e7e7;
+    opacity: 25%;
+  }
+
+  .brand-logo__second span {
+    margin: 25px 0;
+    width: 2px;
+    height: 119px;
+    background-color: lightgrey;
+    border: 1px solid #e8e7e7;
+    opacity: 25%;
+  }
+
+  .brand-logo__third span {
+    margin: 25px 0 8px 0;
+    width: 2px;
+    height: 119px;
+    background-color: lightgrey;
+    border: 1px solid #e8e7e7;
+    opacity: 25%;
+  }
+
+  .brand-logo__third li:nth-child(1) {
+    margin-left: -8px;
+    margin-right: -15px;
+  }
+
+  .news {
+    display: none;
+  }
+
+  .recommended {
+    margin: 155px 0;
+  }
+
+  .recommended__text {
+    padding: 0 17px;
+  }
+
+  .recommended__title {
+    font-size: 50px;
+  }
+
+  .recommended__subtitle {
+    font-size: 29px;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .recommended__list {
+    margin-top: 75px;
+  }
+
+  .recommended__item-left {
+    margin: 0 27px 9px 29px;
+    display: flex;
+  }
+
+  .recommended__item-text {
+    padding-right: 33px;
+    padding-left: 69px;
+    text-align: left;
+  }
+
+  .recommended__item-left p:first-child {
+    padding: 118px 0 28px 0;
+  }
+
+  .recommended__item-left p:nth-child(3) {
+    padding: 26px 0 0 0;
+    font-size: 25px;
+    color: #777777;
+    font-weight: 300;
+  }
+
+  .recommended__item-left img {
+    padding-top: 12px;
   }
 }
 
