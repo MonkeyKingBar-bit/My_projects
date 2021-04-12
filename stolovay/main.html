@@ -31,11 +31,11 @@
             </a>
             <div class="header__right">
                 <img src="./assets/icons/mobile/search.png" alt="search">
-                <img src="./assets/icons/mobile/telephone-handle-silhouette%20(2).png" alt="contacts">
+                <img class="phone" src="./assets/icons/mobile/telephone-handle-silhouette%20(2).png" alt="contacts">
                 <div class="basket">
                     <div class="basket__count">
                         <p class="basket__col">12</p>
-                        <img src="./assets/icons/mobile/basket.png" alt="basket">
+                        <img class="basket__img" src="./assets/icons/mobile/basket.png" alt="basket">
                     </div>
                 </div>
             </div>
@@ -181,6 +181,10 @@
                     <p>Все предложения</p>
                     <span>&#62;</span></a></li>
             </ul>
+            <div class="categories-mobile__item">
+                <p>Оборудование</p>
+                <span>&#62;</span></a></li>
+            </div>
             <!-- Slider main container -->
             <div class="swiper-container">
                 <!-- Additional required wrapper -->
@@ -261,6 +265,23 @@
                 <span></span>
                 <li class="logo-brend__item"><a href="" class="logo-brend__link">Все бренды</a></li>
                 </ul>
+            <ul class="brand-logo__mobile">
+                <div class="brand-logo__first">
+                    <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/abat.svg" alt="Abat"></a></li>
+                    <span></span>
+                    <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/atesy.svg" alt="Atesy"></a></li>
+                </div>
+                <div class="brand-logo__second">
+                    <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/hitcold.svg" alt="Hit Cold"></a></li>
+                    <span></span>
+                    <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/rational.svg" alt="Rational"></a></li>
+                </div>
+                <div class="brand-logo__third">
+                    <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/simeco.svg" alt="Simeco"></a></li>
+                    <span></span>
+                    <li class="logo-brend__item"><a href="" class="logo-brend__link">Все бренды</a></li>
+                </div>
+            </ul>
         </section>
         <section class="news">
             <p>Новости производителей</p>
@@ -325,9 +346,11 @@
             </div>
             <div class="recommended__list">
                 <div class="recommended__item-left">
-                    <p>Rational</p>
-                    <p>Пароконвектоматы</p>
-                    <p>Педантичность и преданность своему делу делает продукцию Rational идеальной для тех, кто ищет надежность и долговечность.</p>
+                    <div class="recommended__item-text">
+                        <p>Rational</p>
+                        <p>Пароконвектоматы</p>
+                        <p>Педантичность и преданность своему делу делает продукцию Rational идеальной для тех, кто ищет надежность и долговечность.</p>
+                    </div>
                     <img src="./assets/picture/rational.png" alt="Rational">
                 </div>
                 <div class="recommended__item-right">
