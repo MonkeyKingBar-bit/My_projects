@@ -1,0 +1,22 @@
+footer {
+  height: 7vh;
+  z-index: 1;
+}
+
+footer .bg-dark {
+  margin: 0!important;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+  
+footer a:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.footer_img {
+  width: 65px;
+}

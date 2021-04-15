@@ -1,0 +1,136 @@
+@media (min-width: 1199px) {
+    .container {
+      max-width: 2000px!important;
+    }
+    .btn-group-sm>.btn, .btn-sm {
+      font-size: .875rem;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .navbar {
+    padding: 0.3rem 1rem!important;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+  
+  .container {
+      max-width: 1500px!important;
+  }
+
+  .btn-group-sm>.btn, .btn-sm {
+    font-size: .875rem;
+  }
+}
+
+@media (max-width: 993px) and (min-width: 767px) {
+  .navbar {
+    padding: 0 1rem!important;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .container {
+      max-width: 1000px!important;
+  }
+
+  .btn-group-sm>.btn, .btn-sm {
+    font-size: .55rem;
+  }
+
+  #global_cases {
+    font-size: 2rem!important;
+  }
+
+  #global_cases_main > div.table-container {
+    height: 525px!important;
+  }
+
+  .table-container {
+    height: 250px!important;
+  }
+
+  #map {
+    height: 562px!important;
+  }
+
+  #graph {
+    height: 17vh!important;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 699px) {
+  .navbar {
+    padding: 0 1rem!important;
+  }
+
+  h2 {
+    display: none;
+  }
+
+  .container {
+    max-width: 1000px!important;
+  }
+
+  .btn-group-sm>.btn, .btn-sm {
+    font-size: .4rem;
+  }
+
+  #global_cases {
+    font-size: 1.5rem!important;
+  }
+
+  #graph {
+    height: 14vh!important;
+  }
+
+  #global_cases_main > div.table-container {
+    height: 491px!important;
+  }
+
+  #map {
+    height: 534px!important;
+  }
+}
+
+@media (max-width: 700px) and (min-width: 500px) {
+  h2 {
+    display: none;
+  }
+
+  #global_cases {
+    font-size: 1rem!important;
+  }
+
+  #global_deaths {
+    font-size: 1rem!important;
+  }
+
+  #global_recovered {
+    font-size: 1rem!important;
+  }
+
+  .table-pagination > p {
+    font-size: 0.68rem!important;
+  }
+
+  #graph {
+    height: 12vh!important;
+  }
+
+  #map {
+    height: 597px!important;
+  }
+
+  .table-container {
+    height: 230px!important;
+  }
+
+  #global_cases_main > div.table-container {
+    height: 481px!important;
+  }
+}
