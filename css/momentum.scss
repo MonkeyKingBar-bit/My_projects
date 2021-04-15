@@ -1,0 +1,287 @@
+:root {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+    background-size: cover;
+    color: black;
+    width: 100vw;
+    background-position: center center; 
+    transition: background-image 1s ease-in-out;
+  }
+
+  .weather {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .city {  
+      width: 200px;
+    }
+  
+    .temperature {    
+      font-size: 20px;
+    }
+  
+    .weather-description {
+      width: 200px;
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+    }
+  
+    .weather-icon {
+      font-size: 3em;
+    }
+  }
+  
+  .your_name{
+    padding: 50px 15px 0 15px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .quote {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 400px;
+    padding: 1em 0 0 0;
+    font-size: 1.2rem;
+    background:transparent;
+
+    .change_quote {
+      width: 30px;
+      height: 30px;
+      border: 0;
+      background: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      filter: grayscale(1);
+      margin: 10px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .quote figcaption, .quote blockquote {
+      margin: 1em;
+    }
+    
+    .quote figcaption {
+      text-align: right;
+    }
+  }
+
+  .your_focus {
+    padding: 50px 15px 0 15px;
+    text-align: center;
+
+    .focus {
+      width: 500px;
+    }
+  }
+  
+  .change_image {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    margin: 10px;
+    outline: none;
+    cursor: pointer;
+    margin-top: -25px;
+  }
+
+  .dayTime {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 15px;
+
+    .day {
+      margin-top: 3rem;
+    }
+  
+    .time {
+      font-size: 5rem;
+    }
+  }
+
+  input {
+    background: transparent;
+    border: none;
+    color: white;
+    text-shadow: 2px 2px 2px black, 1px 1px 3em black;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  ::placeholder { 
+    opacity: 1; 
+  }
+
+  h1 {
+    margin-bottom: 3rem;
+  }
+  
+  h2 {
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+  }
+
+  @media screen and (max-width: 559px)  and (min-width: 320px){
+    body {
+      background-size: none;
+    }
+
+    .dayTime {
+      width: 500px;
+      padding: 0;
+
+      .time {
+        font-size: 2rem;
+      }
+    }
+    
+    .weather {
+      width: 500px;
+      display: flex;
+
+      .wind-speed {
+        font-size: 13px;
+      }
+  
+      .city, .weather-description {
+        width:  55px;
+        font-size: 13px;
+      }
+  
+      .temperature {
+        margin-right: 10px;
+        font-size: 13px;
+      }
+  
+      .weather-icon {
+        font-size: 2em;
+      }
+  
+      .humidity {
+        font-size: 13px;
+      }
+    }
+  
+    .your_name{
+      padding: 32px 0 0 0;
+      width: 500px;
+    }
+  
+    .quote {
+      margin: 0 50px;
+      font-size: 1rem;
+      width: 400px;
+    }
+  
+    .your_focus{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 500px;
+      padding: 20px 15px 0 15px;
+    }
+  }
+
+@media screen and (max-width: 767px)  and (min-width: 560px){
+  .time {
+    font-size: 3.5rem;
+  }
+
+  .weather {
+    .wind-speed {
+      font-size: 15px;
+    }
+
+    .city, .weather-description {
+      width: 90px;
+      font-size: 15px;
+    }
+
+    .temperature {
+      margin-right: 10px;
+      font-size: 15px;
+    }
+
+    .weather-icon {
+      font-size: 2em;
+    }
+
+    .humidity {
+      font-size: 15px;
+    }
+  }
+
+  .your_name{
+    padding: 30px 15px 0 15px;
+  }
+
+  .quote {
+    margin: 0 80px;
+  }
+
+  .your_focus{
+    padding: 20px 15px 0 15px;
+  }
+}
+
+@media screen and (max-width: 1140px)  and (min-width: 768px){
+  .time {
+    font-size: 6rem;
+  }
+
+  .weather {
+    .wind-speed {
+      font-size: 15px;
+    }
+
+    .city, .weather-description {
+      width: 90px;
+      font-size: 15px;
+    }
+
+    .temperature {
+      margin-right: 10px;
+      font-size: 15px;
+    }
+
+    .weather-icon {
+      font-size: 2em;
+    }
+
+    .humidity {
+      font-size: 15px;
+    }
+  }
+
+  .your_name{
+    padding: 30px 15px 0 15px;
+  }
+
+  .quote {
+    margin: 0 90px;
+  }
+
+  .your_focus{
+    padding: 20px 15px 0 15px;
+  }
+}
