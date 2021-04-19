@@ -855,14 +855,6 @@ header {
   font-weight: 300;
 }
 
-/* ------------------- */
-/*MEDIA*/
-@media (min-width: 1400px) {
-  .ct-header .ct-jumbotron .inner {
-    max-width: 470px;
-    min-height: 230px;
-  }
-}
 @media (max-width: 1400px) {
   .ct-header-slider .item {
     background-size: contain;
@@ -870,9 +862,10 @@ header {
     background-position: center top;
   }
 }
-@media (min-width: 769px) and (max-width: 1400px) {
-  .ct-header-slider .item {
-    height: auto;
+@media (min-width: 1400px) {
+  .ct-header .ct-jumbotron .inner {
+    max-width: 470px;
+    min-height: 230px;
   }
 }
 @media (max-width: 1260px) {
@@ -889,14 +882,9 @@ header {
     bottom: 100px;
   }
 }
-@media (min-width: 767px) {
-  .menu {
-    display: flex;
-    align-items: center;
-  }
-
-  .menu__item {
-    padding: 10px 0;
+@media (min-width: 769px) and (max-width: 1400px) {
+  .ct-header-slider .item {
+    height: auto;
   }
 }
 @media (max-width: 768px) {
@@ -1444,6 +1432,7 @@ header {
   }
 
   .footer__block:last-child {
+    display: flex;
     border-bottom: none;
   }
 
@@ -1484,6 +1473,106 @@ header {
 
   .footer__copyright p {
     font-size: 40px;
+  }
+}
+@media (min-width: 767px) {
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu__item {
+    padding: 10px 0;
+  }
+}
+@media (max-width: 768px) and (min-width: 640px) {
+  .logo__text {
+    margin-right: 55px;
+    font-size: 24px;
+  }
+
+  .logo__text p:last-child {
+    font-size: 16px;
+  }
+
+  .header__right img:first-child,
+.phone {
+    margin-top: 9px;
+  }
+
+  .basket__col {
+    font-size: 20px;
+  }
+
+  .basket__img {
+    margin-top: -15px;
+  }
+
+  .slide__text {
+    margin: 60px 0 0 45px;
+  }
+
+  .slide__title {
+    margin-top: 34px;
+    font-size: 28px !important;
+  }
+
+  .slide__subtitle {
+    font-size: 14px;
+  }
+
+  .slide__text button {
+    font-size: 16px;
+  }
+
+  .recommended__subtitle {
+    width: 567px;
+  }
+
+  .recommended__item-text {
+    padding-left: 10px;
+  }
+
+  .recommended__item-right > div:nth-child(1) div {
+    margin: 44px 0 0 45px;
+  }
+
+  .recommended__item-left p:nth-child(2),
+.recommended__content:nth-child(1) div p:nth-child(2),
+.recommended__content:nth-child(2) div p:nth-child(2) {
+    font-size: 30px;
+    padding-right: 0;
+  }
+
+  .recommended__item-left p:nth-child(3),
+.recommended__content:nth-child(1) div p:nth-child(3),
+.recommended__content:nth-child(2) div p:nth-child(3) {
+    font-size: 22px;
+  }
+
+  .recommended__content:nth-child(2) div {
+    margin-left: 10px;
+  }
+
+  .recommended__content:nth-child(2) img {
+    margin-left: 13px;
+    margin-top: 40px;
+  }
+
+  .recommended__content:nth-child(2) {
+    height: 450px;
+  }
+
+  .left__text p:first-child {
+    font-size: 40px;
+  }
+
+  .left__text p:nth-child(2) {
+    font-size: 24px;
+  }
+
+  .footer__copyright p {
+    font-size: 35px;
   }
 }
 
