@@ -20,6 +20,7 @@ body._lock {
   overflow: hidden;
 }
 .wrapper {
+  max-width: 1920px;
   min-height: 100%;
   margin: 0 auto;
 }
@@ -50,10 +51,37 @@ header {
   text-decoration: none;
   color: #ffffff;
 }
+.menu__item {
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
 .menu__item:nth-child(12) .menu__link,
 .menu__item:nth-child(13) .menu__link {
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+li:nth-child(12) > button > div {
+  display: flex;
+}
+.menu__link_email {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.header__email_click {
+  display: none;
+  width: 163px;
+  height: 45px;
+  border-radius: 23px;
+  filter: drop-shadow(4.31px 5.516px 12px rgba(0,0,0,0.49));
+  background-color: #232323;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  outline: none;
 }
 
 .header {
@@ -245,7 +273,6 @@ header {
   margin: 19px 188px 19px 184px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .categories {
   margin-right: 20px;

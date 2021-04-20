@@ -57,3 +57,14 @@ if (isMobile.any()) {
             menuBody.classList.toggle('_active');
         })
     };
+
+
+    const email = document.querySelector('.menu__link_email');
+    const headerEmailClick = document.querySelector('.header__email_click');
+    email.addEventListener('click', () => {
+        email.style.backgroundColor = "rgb(100%, 100%, 100%, .5)";
+        headerEmailClick.style.display = "block";
+    })
+    headerEmailClick.addEventListener('click', () => {
+        headerEmailClick.style.display = "none";
+    })
