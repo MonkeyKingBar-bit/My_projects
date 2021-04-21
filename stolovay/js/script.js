@@ -64,7 +64,9 @@ if (isMobile.any()) {
     email.addEventListener('click', () => {
         email.style.backgroundColor = "rgb(100%, 100%, 100%, .5)";
         headerEmailClick.style.display = "block";
+
     })
     headerEmailClick.addEventListener('click', () => {
         headerEmailClick.style.display = "none";
+        email.style.backgroundColor = "transparent";
     })

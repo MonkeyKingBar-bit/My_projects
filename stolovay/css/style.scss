@@ -61,6 +61,7 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: transparent;
 }
 li:nth-child(12) > button > div {
   display: flex;
@@ -560,7 +561,7 @@ li:nth-child(12) > button > div {
   color: #121212;
 }
 .recommended__item-left p:nth-child(3) {
-  padding: 0 161px 39px 150px;
+  padding: 0 25px;
   font-size: 16px;
   color: #777777;
   font-weight: 300;
@@ -572,7 +573,6 @@ li:nth-child(12) > button > div {
   display: flex;
 }
 .recommended__content:nth-child(1) {
-  width: 784px;
   overflow: hidden;
   background-color: #232323;
 }
