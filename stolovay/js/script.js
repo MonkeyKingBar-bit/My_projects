@@ -60,13 +60,16 @@ if (isMobile.any()) {
 
 
     const email = document.querySelector('.menu__link_email');
+    const menuItemEmail = document.querySelector('.menu__item_email');
     const headerEmailClick = document.querySelector('.header__email_click');
-    email.addEventListener('click', () => {
-        email.style.backgroundColor = "rgb(100%, 100%, 100%, .5)";
-        headerEmailClick.style.display = "block";
 
+    email.addEventListener('click', () => {
+        menuItemEmail.style.backgroundColor = "rgb(100%, 100%, 100%, .5)";
+        email.style.marginBottom = "27px";
+        headerEmailClick.style.display = "block";
     })
     headerEmailClick.addEventListener('click', () => {
         headerEmailClick.style.display = "none";
-        email.style.backgroundColor = "transparent";
+        email.style.marginBottom = "0";
+        menuItemEmail.style.backgroundColor = "transparent";
     })
