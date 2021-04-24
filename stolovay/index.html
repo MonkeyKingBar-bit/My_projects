@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./dist/style.css">
     <!-- BOOTSTRAP -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <script src="js/script.js" defer></script>
+    <script src="./dist/script.js" defer></script>
     <title>Столовая.РУ</title>
 </head>
 <body>
@@ -23,19 +23,19 @@
                 <span></span>
             </div>
             <a class="header__logo" href="#">
-                <img src="./assets/icons/mobile/header-logo.png" alt="logo">
+                <img src="./src/assets/icons/mobile/header-logo.png" alt="logo">
                 <div class="logo__text">
                     <p>Столовая.РУ</p>
                     <p>Создание пищеблоков</p>
                 </div>
             </a>
             <div class="header__right">
-                <img src="./assets/icons/mobile/search.png" alt="search">
-                <img class="phone" src="./assets/icons/mobile/telephone-handle-silhouette%20(2).png" alt="contacts">
+                <img src="./src/assets/icons/mobile/search.png" alt="search">
+                <img class="phone" src="./src/assets/icons/mobile/telephone-handle-silhouette%20(2).png" alt="contacts">
                 <div class="basket">
                     <div class="basket__count">
                         <p class="basket__col">12</p>
-                        <img class="basket__img" src="./assets/icons/mobile/basket.png" alt="basket">
+                        <img class="basket__img" src="./src/assets/icons/mobile/basket.png" alt="basket">
                     </div>
                 </div>
             </div>
@@ -53,29 +53,30 @@
                 <span>|</span>
                 <li class="menu__item"><a href="" class="menu__link">Сервис</a></li>
                 <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
-                <li class="menu__item">
+                <li class="menu__item menu__item_email">
                     <button class="menu__link menu__link_email">
                         <div>
-                            <img src="./assets/icons/email.svg" alt="contact-info">
+                            <img src="./src/assets/icons/email.svg" alt="contact-info">
                             <p>info@stolovay.ru</p>
                         </div>
                         <button class="header__email_click">
                             Скопировать
                         </button>
                     </button></li>
-                <li class="menu__item">
-                    <a href="" class="menu__link">
+                <li class="menu__item menu__item_phone">
+                    <button class="menu__link_phone">
                         <div>
-                            <img src="./assets/icons/phone.svg" alt="contact-phone">
+                            <img src="./src/assets/icons/phone.svg" alt="contact-phone">
                             <p>8 495 790-72-05</p>
                         </div>
-                    </a></li>
+                    </button>
+                </li>
             </ul>
         </nav>
 </header>
     <div class="header">
         <a class="logo" href="#">
-            <img src="./assets/icons/logo.svg" alt="logo">
+            <img src="./src/assets/icons/logo.svg" alt="logo">
             <p>Столовая.РУ</p>
         </a>
         <div class="container">
@@ -102,20 +103,20 @@
                         </div>
                         <input id="table_filter" type="text" class="form-control" aria-label="Text input with segmented button dropdown" >
                             <button id="searchBtn" type="button" class="btn btn-secondary btn-search">
-                                <img src="./assets/icons/search.svg" alt="search">
+                                <img src="./src/assets/icons/search.svg" alt="search">
                             </button>
                     </div>
                 </div>
             </div>
         </div>
         <a class="portal" href="#">
-            <img src="./assets/icons/portal.png" alt="portal-icon">
+            <img src="./src/assets/icons/portal.png" alt="portal-icon">
             <p>Мы на портале поставщиков</p>
         </a>
         <div class="basket">
             <div class="basket__count">
                 <p id="basket__col">12</p>
-                <img src="./assets/icons/baske.svg" alt="basket">
+                <img src="./src/assets/icons/baske.svg" alt="basket">
             </div>
             <div class="basket__text">
                 <p>Сумма</p>
@@ -125,37 +126,37 @@
     </div>
     <main>
         <ul class="catalog">
-            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/warm.svg" alt="Тепловое">
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./src/assets/icons/warm.svg" alt="Тепловое">
                 <p>Тепловое</p>
             </a></li>
-            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/refrigerator.svg" alt="Холодильное">
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./src/assets/icons/refrigerator.svg" alt="Холодильное">
                 <p>Холодильное</p>
             </a></li>
-            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/electromechanical.svg" alt="Электромеханическое">
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./src/assets/icons/electromechanical.svg" alt="Электромеханическое">
                 <p>Электромеханическое</p>
             </a></li>
-            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/dishwashers.svg" alt="Посудомоечное">
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./src/assets/icons/dishwashers.svg" alt="Посудомоечное">
                 <p>Посудомоечное</p>
             </a></li>
-            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/bakery.svg" alt="Хлебопекарное">
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./src/assets/icons/bakery.svg" alt="Хлебопекарное">
                 <p>Хлебопекарное</p>
             </a></li>
-            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/distribution.svg" alt="Линии раздачи">
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./src/assets/icons/distribution.svg" alt="Линии раздачи">
                 <p>Линии раздачи</p>
             </a></li>
-            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/neutral.svg" alt="Нейтральное">
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./src/assets/icons/neutral.svg" alt="Нейтральное">
                 <p>Нейтральное</p>
             </a></li>
-            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/fastfood.svg" alt="Для фаст фуда">
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./src/assets/icons/fastfood.svg" alt="Для фаст фуда">
                 <p>Для фаст фуда</p>
             </a></li>
-            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/hall.svg" alt="Для залов">
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./src/assets/icons/hall.svg" alt="Для залов">
                 <p>Для залов</p>
             </a></li>
-            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/weight.svg" alt="Вспомогательное">
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./src/assets/icons/weight.svg" alt="Вспомогательное">
                 <p>Вспомогательное</p>
             </a></li>
-            <li class="catalog__item"><a href="" class="catalog__link"><img src="./assets/icons/shop.svg" alt="Для магазинов">
+            <li class="catalog__item"><a href="" class="catalog__link"><img src="./src/assets/icons/shop.svg" alt="Для магазинов">
                 <p>Для магазинов</p>
             </a></li>
         </ul>
@@ -208,7 +209,7 @@
                                 <button>Подробнее</button>
                             </figure>
                             <figure class="slide__image">
-                                <img src="./assets/picture/nii.png" alt="НИИ скорой помощи им. Н.В.Склифосовского">
+                                <img src="./src/assets/picture/nii.png" alt="НИИ скорой помощи им. Н.В.Склифосовского">
                             </figure>
                         </div>
                     </div>
@@ -220,7 +221,7 @@
                             <button>Подробнее</button>
                         </figure>
                         <figure class="slide__image">
-                            <img src="./assets/picture/nii.png" alt="НИИ скорой помощи им. Н.В.Склифосовского">
+                            <img src="./src/assets/picture/nii.png" alt="НИИ скорой помощи им. Н.В.Склифосовского">
                         </figure>
                     </div>
                     <div class="swiper-slide">
@@ -231,7 +232,7 @@
                             <button>Подробнее</button>
                         </figure>
                         <figure class="slide__image">
-                            <img src="./assets/picture/nii.png" alt="НИИ скорой помощи им. Н.В.Склифосовского">
+                            <img src="./src/assets/picture/nii.png" alt="НИИ скорой помощи им. Н.В.Склифосовского">
                         </figure>
                     </div>
                     <div class="swiper-slide">
@@ -242,7 +243,7 @@
                             <button>Подробнее</button>
                         </figure>
                         <figure class="slide__image">
-                            <img src="./assets/picture/nii.png" alt="НИИ скорой помощи им. Н.В.Склифосовского">
+                            <img src="./src/assets/picture/nii.png" alt="НИИ скорой помощи им. Н.В.Склифосовского">
                         </figure>
                     </div>
                     ...
@@ -252,7 +253,7 @@
                 <div class="swiper-pagination"></div>
             </div>
             <div class="sales">
-                <img src="./assets/picture/giftbox.png" alt="gift">
+                <img src="./src/assets/picture/giftbox.png" alt="gift">
                 <div class="sales__text">
                     <p>Самые низкие цены</p>
                     <p>Распродажа</p>
@@ -262,31 +263,31 @@
         </section>
         <section class="brand">
             <ul class="logo-brend">
-                <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/abat.svg" alt="Abat"></a></li>
+                <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./src/assets/icons/abat.svg" alt="Abat"></a></li>
                 <span></span>
-                <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/atesy.svg" alt="Atesy"></a></li>
+                <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./src/assets/icons/atesy.svg" alt="Atesy"></a></li>
                 <span></span>
-                <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/hitcold.svg" alt="Hit Cold"></a></li>
+                <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./src/assets/icons/hitcold.svg" alt="Hit Cold"></a></li>
                 <span></span>
-                <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/rational.svg" alt="Rational"></a></li>
+                <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./src/assets/icons/rational.svg" alt="Rational"></a></li>
                 <span></span>
-                <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/simeco.svg" alt="Simeco"></a></li>
+                <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./src/assets/icons/simeco.svg" alt="Simeco"></a></li>
                 <span></span>
                 <li class="logo-brend__item"><a href="" class="logo-brend__link">Все бренды</a></li>
                 </ul>
             <ul class="brand-logo__mobile">
                 <div class="brand-logo__first">
-                    <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/abat.svg" alt="Abat"></a></li>
+                    <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./src/assets/icons/abat.svg" alt="Abat"></a></li>
                     <span></span>
-                    <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/atesy.svg" alt="Atesy"></a></li>
+                    <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./src/assets/icons/atesy.svg" alt="Atesy"></a></li>
                 </div>
                 <div class="brand-logo__second">
-                    <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/hitcold.svg" alt="Hit Cold"></a></li>
+                    <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./src/assets/icons/hitcold.svg" alt="Hit Cold"></a></li>
                     <span></span>
-                    <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/rational.svg" alt="Rational"></a></li>
+                    <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./src/assets/icons/rational.svg" alt="Rational"></a></li>
                 </div>
                 <div class="brand-logo__third">
-                    <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./assets/icons/simeco.svg" alt="Simeco"></a></li>
+                    <li class="logo-brend__item"><a href="" class="logo-brend__link"><img src="./src/assets/icons/simeco.svg" alt="Simeco"></a></li>
                     <span></span>
                     <li class="logo-brend__item"><a href="" class="logo-brend__link">Все бренды</a></li>
                 </div>
@@ -296,7 +297,7 @@
             <p>Новости производителей</p>
             <div class="all-news">
                 <div class="news__first">
-                    <img src="./assets/picture/abat.png" alt="Abat">
+                    <img src="./src/assets/picture/abat.png" alt="Abat">
                     <div class="news__date">
                         <p>Abat</p>
                         <p>22.06.17</p>
@@ -309,7 +310,7 @@
                 </div>
                 <div class="news__second">
                     <div>
-                        <img src="./assets/picture/abat1.png" alt="Abat1">
+                        <img src="./src/assets/picture/abat1.png" alt="Abat1">
                         <div class="news__text">
                             <div class="news__date">
                                 <p>Abat</p>
@@ -321,7 +322,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="./assets/picture/abat2.png" alt="Abat2">
+                        <img src="./src/assets/picture/abat2.png" alt="Abat2">
                         <div class="news__text">
                             <div class="news__date">
                                 <p>Abat</p>
@@ -332,7 +333,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="./assets/picture/abat3.png" alt="Abat3">
+                        <img src="./src/assets/picture/abat3.png" alt="Abat3">
                         <div class="news__text">
                             <div class="news__date">
                                 <p>Abat</p>
@@ -360,11 +361,11 @@
                         <p>Пароконвектоматы</p>
                         <p>Педантичность и преданность своему делу делает продукцию Rational идеальной для тех, кто ищет надежность и долговечность.</p>
                     </div>
-                    <img src="./assets/picture/rational.png" alt="Rational">
+                    <img src="./src/assets/picture/rational.png" alt="Rational">
                 </div>
                 <div class="recommended__item-right">
                     <div class="recommended__content">
-                        <img src="./assets/picture/abatpic.png" alt="Abat">
+                        <img src="./src/assets/picture/abatpic.png" alt="Abat">
                         <div>
                             <p>Abat</p>
                             <p>Тепловое оборудование</p>
@@ -372,7 +373,7 @@
                         </div>
                     </div>
                     <div class="recommended__content">
-                        <img src="./assets/picture/hicold.png" alt="Hicold">
+                        <img src="./src/assets/picture/hicold.png" alt="Hicold">
                         <div>
                             <p>Hicold</p>
                             <p>Холодильные столы</p>
@@ -404,7 +405,7 @@
                 <button class="seo__button">&#43;</button>
             </div>
             <div class="seo__logo">
-                <img src="./assets/icons/seologo.svg" alt="Seo Logo">
+                <img src="./src/assets/icons/seologo.svg" alt="Seo Logo">
                 <p class="logo__title">Столовая.РУ</p>
                 <p class="logo__subtitle">создание оптимальных пищеблоков</p>
                 <p>Группа компаний</p>
@@ -486,7 +487,7 @@
         <div class="footer__copyright">
             <div class="footer__left">
                 <div class="left__image">
-                    <img src="./assets/icons/footer-logo.svg">
+                    <img src="./src/assets/icons/footer-logo.svg">
                 </div>
                 <div class="left__text">
                     <p>Столовая.РУ</p>

@@ -61,19 +61,24 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: transparent;
 }
 li:nth-child(12) > button > div {
   display: flex;
 }
-.menu__link_email {
+.menu__link_email,
+.menu__link_phone {
   background-color: transparent;
   outline: none;
   border: none;
+  color: #ffffff;
+  font-size: 12px;
 }
 .header__email_click {
   display: none;
   width: 163px;
   height: 45px;
+  margin-bottom: -73px;
   border-radius: 23px;
   filter: drop-shadow(4.31px 5.516px 12px rgba(0,0,0,0.49));
   background-color: #232323;
@@ -82,6 +87,9 @@ li:nth-child(12) > button > div {
   text-align: center;
   border: none;
   outline: none;
+}
+body > div > header > nav > ul > li:nth-child(13) > button > div {
+  display: flex;
 }
 
 .header {
@@ -560,7 +568,7 @@ li:nth-child(12) > button > div {
   color: #121212;
 }
 .recommended__item-left p:nth-child(3) {
-  padding: 0 161px 39px 150px;
+  padding: 0 25px;
   font-size: 16px;
   color: #777777;
   font-weight: 300;
@@ -572,7 +580,6 @@ li:nth-child(12) > button > div {
   display: flex;
 }
 .recommended__content:nth-child(1) {
-  width: 784px;
   overflow: hidden;
   background-color: #232323;
 }
