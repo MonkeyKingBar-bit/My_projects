@@ -72,7 +72,7 @@ li:nth-child(12) > button > div {
   outline: none;
   border: none;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 14px;
 }
 .header__email_click {
   display: none;
@@ -88,8 +88,11 @@ li:nth-child(12) > button > div {
   border: none;
   outline: none;
 }
-body > div > header > nav > ul > li:nth-child(13) > button > div {
+.menu__link_phone-inf {
   display: flex;
+}
+.menu__link-phone_active {
+  display: none;
 }
 
 .header {
