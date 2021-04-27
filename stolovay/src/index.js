@@ -57,8 +57,8 @@ const checkIsMobile = () => {
     document.body.classList.add('_pc');
   }
 };
-function headerMouseAction() {
-  function clickOnEmail() {
+const headerMouseAction = {
+  clickOnEmail() {
     const email = document.querySelector('.menu__link_email');
     const menuItemEmail = document.querySelector('.menu__item_email');
     const headerEmailClick = document.querySelector('.header__email_click');
@@ -72,28 +72,33 @@ function headerMouseAction() {
       email.style.marginBottom = '0';
       menuItemEmail.style.backgroundColor = 'transparent';
     });
-  }
-  function mouseOverPhone() {
-    const phone = document.querySelector('.menu__link_phone');
+  },
+  createPopup() {
     const menuItemPhone = document.querySelector('.menu__item_phone');
-    const menuItemPhoneActive = document.querySelector('.menu__link-phone_active');
+    const popupMenu = document.querySelector('.popup');
+    const closePopup = document.querySelector('.popup__close');
+    const overlay = document.querySelector('.modal_overlay');
     menuItemPhone.addEventListener('mouseover', () => {
-      menuItemPhone.style.backgroundColor = 'rgb(100%, 100%, 100%, .5)';
+      menuItemPhone.style.backgroundColor = 'rgba(100%, 100%, 100%, .5)';
+      popupMenu.classList.toggle('open');
+      overlay.classList.toggle('active');
     });
     menuItemPhone.addEventListener('mouseout', () => {
       menuItemPhone.style.backgroundColor = 'transparent';
     });
-    phone.addEventListener('click', () => {
-      menuItemPhone.style.backgroundColor = 'rgb(100%, 100%, 100%, .5)'; // menuItemPhoneActive.style.display = 'block';
-      createPopup();
+    closePopup.addEventListener('click', () => {
+      popupMenu.classList.remove('open');
+      overlay.classList.remove('active');
     });
-  }
-  const createPopup = () => {
-
-  };
-}
+    overlay.addEventListener('click', () => {
+      popupMenu.classList.remove('open');
+      overlay.classList.remove('active');
+    });
+  },
+};
 
 burgerMenu();
 sliderSwiper();
 checkIsMobile();
-headerMouseAction();
+headerMouseAction.clickOnEmail();
+headerMouseAction.createPopup();

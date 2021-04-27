@@ -1,3 +1,5 @@
+@import "popup";
+
 $header-menu: #00a94b;
 $header-search: #e8e7e7;
 $catalog: #ffffff;
@@ -17,6 +19,9 @@ body {
   font-family: "Myriad Pro", system-ui, sans-serif !important;
 }
 body._lock {
+  overflow: hidden;
+}
+body.lock {
   overflow: hidden;
 }
 .wrapper {
@@ -90,9 +95,6 @@ li:nth-child(12) > button > div {
 }
 .menu__link_phone-inf {
   display: flex;
-}
-.menu__link-phone_active {
-  display: none;
 }
 
 .header {
