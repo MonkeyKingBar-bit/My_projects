@@ -1,5 +1,6 @@
 /* eslint-disable strict,lines-around-directive,no-undef,no-unused-vars,no-use-before-define */
 'use strict';
+import { searchClickAll } from './js/slider';
 
 const burgerMenu = () => {
   const iconMenu = document.querySelector('.menu__icon');
@@ -74,23 +75,26 @@ const headerMouseAction = {
     });
   },
   createPopup() {
+    const menuLinkPhone = document.querySelector('.menu__link_phone');
     const menuItemPhone = document.querySelector('.menu__item_phone');
     const popupMenu = document.querySelector('.popup');
     const closePopup = document.querySelector('.popup__close');
+    const body = document.querySelector('body');
     const overlay = document.querySelector('.modal_overlay');
-    menuItemPhone.addEventListener('mouseover', () => {
+    menuLinkPhone.addEventListener('mouseover', () => {
       menuItemPhone.style.backgroundColor = 'rgba(100%, 100%, 100%, .5)';
       popupMenu.classList.toggle('open');
+      body.classList.toggle('lock');
       overlay.classList.toggle('active');
-    });
-    menuItemPhone.addEventListener('mouseout', () => {
-      menuItemPhone.style.backgroundColor = 'transparent';
     });
     closePopup.addEventListener('click', () => {
       popupMenu.classList.remove('open');
+      menuItemPhone.style.backgroundColor = 'transparent';
       overlay.classList.remove('active');
+      body.classList.remove('lock');
     });
     overlay.addEventListener('click', () => {
+      menuItemPhone.style.backgroundColor = 'transparent';
       popupMenu.classList.remove('open');
       overlay.classList.remove('active');
     });
