@@ -2,6 +2,7 @@
   "name": "stolovay",
   "version": "1.0.0",
   "dependencies": {
+    "rax-hot-module-replacement-webpack-plugin": "^0.6.5",
     "swiper": "^6.5.0"
   },
   "main": "./src/index.js",

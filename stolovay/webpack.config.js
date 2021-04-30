@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+  watch: true,
   entry: ['./src/index.js', './src/css/style.scss'],
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -27,6 +28,7 @@ module.exports = {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/,
         type: 'asset/resource',
       },
+      // HTML
       {
         test: /\.html$/,
         loader: 'html-loader',

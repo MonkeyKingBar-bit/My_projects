@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <script src="2571bf2edb71e75e40a0.js" defer></script>
+    <script src="4d5df8c3a3c340524523.js" defer></script>
     <title>Столовая.РУ</title>
 <script defer src="script.js"></script><link href="style.css" rel="stylesheet"></head>
 <body>
 <div class="wrapper">
-    <header>
+    <header id="header" class="lock-padding">
         <div class="header__mobile">
             <div class="menu__icon">
                 <span></span>
@@ -74,9 +74,6 @@
             </ul>
         </nav>
 </header>
-    <div id="popup" class="popup">
-        rtyt
-    </div>
     <div class="header">
         <a class="logo" href="#">
             <img src="f36caa89cc5c421c2582.svg" alt="logo">
@@ -87,7 +84,8 @@
                 <div class="col-sm-12" >
                     <div class="input-group" >
                         <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-                            <span class="label-icon" >Все</span> <span class="caret" >&nbsp;</span></button>
+                            Все
+                            <span class="label-icon" ></span> <span class="caret" >&nbsp;</span></button>
                         <div class="dropdown-menu dropdown-menu-right" >
                             <ul class="category_filters" >
                                 <li disabled="Выберите категорию:">Выберите категорию:</li>
@@ -104,7 +102,7 @@
                                 <li><a href="#">Весовое</a></li>
                             </ul>
                         </div>
-                        <input id="table_filter" type="text" class="form-control" aria-label="Text input with segmented button dropdown" >
+                        <input id="table_filter" name="search" type="search" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="" required>
                             <button id="searchBtn" type="button" class="btn btn-secondary btn-search">
                                 <img src="3218577106d9ddc5f317.svg" alt="search">
                             </button>
@@ -500,6 +498,48 @@
             <p>Сайт разработан NTI-systems</p>
         </div>
     </footer>
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close">&#65336;</a>
+                <div class="popup__text">
+                    <div class="popup__contact">
+                        <p>8 495 790-72-05</p>
+                        <p>Мы принимаем звонки без выходных.</p>
+                        <p>Выберите способ связи:</p>
+                        <div class="popup__contact-communicate">
+                            <div class="contact">
+                                <img src="6525ca0f43f1813ee680.png" alt="phone">
+                                <p>Мобильный</p>
+                            </div>
+                            <div class="contact">
+                                <img src="58e0769c23f0c40fbc73.png" alt="Viber">
+                                <p>Viber</p>
+                            </div>
+                            <div class="contact">
+                                <img src="5cdf96b47c757270783f.png" alt="telegram">
+                                <p>Telegram</p>
+                            </div>
+                            <div class="contact">
+                                <img src="10eb6f4f6707ec6a441d.png" alt="whatsapp">
+                                <p>Whatsapp</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup__form">
+                        <form name="form" action="mail.php" method="post" id="form_message">
+                            <p>Обратный звонок:</p>
+                            <p>Мы перезвоним вам в течении часа</p>
+                            <p> <div class="titles">Имя:</div> <input class="input" name="name" type="text" placeholder="" required/> </p>
+                            <p> <div class="titles">Телефон:</div> <input class="input" name="phone" type="tel" required/> </p>
+                            <p><input id="submit" value="Отправить" type="submit" /></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal_overlay"></div>
 </div>
 </body>
 </html>

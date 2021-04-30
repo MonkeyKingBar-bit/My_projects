@@ -1,5 +1,6 @@
 /* eslint-disable strict,lines-around-directive,no-undef,no-unused-vars,no-use-before-define */
 'use strict';
+import { searchClickAll } from './js/slider';
 
 const burgerMenu = () => {
   const iconMenu = document.querySelector('.menu__icon');
@@ -57,8 +58,8 @@ const checkIsMobile = () => {
     document.body.classList.add('_pc');
   }
 };
-function headerMouseAction() {
-  function clickOnEmail() {
+const headerMouseAction = {
+  clickOnEmail() {
     const email = document.querySelector('.menu__link_email');
     const menuItemEmail = document.querySelector('.menu__item_email');
     const headerEmailClick = document.querySelector('.header__email_click');
@@ -72,28 +73,36 @@ function headerMouseAction() {
       email.style.marginBottom = '0';
       menuItemEmail.style.backgroundColor = 'transparent';
     });
-  }
-  function mouseOverPhone() {
-    const phone = document.querySelector('.menu__link_phone');
+  },
+  createPopup() {
+    const menuLinkPhone = document.querySelector('.menu__link_phone');
     const menuItemPhone = document.querySelector('.menu__item_phone');
-    const menuItemPhoneActive = document.querySelector('.menu__link-phone_active');
-    menuItemPhone.addEventListener('mouseover', () => {
-      menuItemPhone.style.backgroundColor = 'rgb(100%, 100%, 100%, .5)';
+    const popupMenu = document.querySelector('.popup');
+    const closePopup = document.querySelector('.popup__close');
+    const body = document.querySelector('body');
+    const overlay = document.querySelector('.modal_overlay');
+    menuLinkPhone.addEventListener('mouseover', () => {
+      menuItemPhone.style.backgroundColor = 'rgba(100%, 100%, 100%, .5)';
+      popupMenu.classList.toggle('open');
+      body.classList.toggle('lock');
+      overlay.classList.toggle('active');
     });
-    menuItemPhone.addEventListener('mouseout', () => {
+    closePopup.addEventListener('click', () => {
+      popupMenu.classList.remove('open');
       menuItemPhone.style.backgroundColor = 'transparent';
+      overlay.classList.remove('active');
+      body.classList.remove('lock');
     });
-    phone.addEventListener('click', () => {
-      menuItemPhone.style.backgroundColor = 'rgb(100%, 100%, 100%, .5)'; // menuItemPhoneActive.style.display = 'block';
-      createPopup();
+    overlay.addEventListener('click', () => {
+      menuItemPhone.style.backgroundColor = 'transparent';
+      popupMenu.classList.remove('open');
+      overlay.classList.remove('active');
     });
-  }
-  const createPopup = () => {
-
-  };
-}
+  },
+};
 
 burgerMenu();
 sliderSwiper();
 checkIsMobile();
-headerMouseAction();
+headerMouseAction.clickOnEmail();
+headerMouseAction.createPopup();
