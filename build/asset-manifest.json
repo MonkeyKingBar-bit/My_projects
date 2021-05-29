@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/unvent/static/css/main.2a788c31.chunk.css",
+    "main.js": "/unvent/static/js/main.fe599990.chunk.js",
+    "main.js.map": "/unvent/static/js/main.fe599990.chunk.js.map",
+    "runtime-main.js": "/unvent/static/js/runtime-main.f6c1fac4.js",
+    "runtime-main.js.map": "/unvent/static/js/runtime-main.f6c1fac4.js.map",
+    "static/css/2.6c5a07f7.chunk.css": "/unvent/static/css/2.6c5a07f7.chunk.css",
+    "static/js/2.4607a508.chunk.js": "/unvent/static/js/2.4607a508.chunk.js",
+    "static/js/2.4607a508.chunk.js.map": "/unvent/static/js/2.4607a508.chunk.js.map",
+    "static/js/3.180e6451.chunk.js": "/unvent/static/js/3.180e6451.chunk.js",
+    "static/js/3.180e6451.chunk.js.map": "/unvent/static/js/3.180e6451.chunk.js.map",
+    "index.html": "/unvent/index.html",
+    "static/css/2.6c5a07f7.chunk.css.map": "/unvent/static/css/2.6c5a07f7.chunk.css.map",
+    "static/css/main.2a788c31.chunk.css.map": "/unvent/static/css/main.2a788c31.chunk.css.map",
+    "static/js/2.4607a508.chunk.js.LICENSE.txt": "/unvent/static/js/2.4607a508.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/unvent/static/media/background.b615fac7.png",
+    "static/media/cert1.69289b7a.png": "/unvent/static/media/cert1.69289b7a.png",
+    "static/media/cert2.8a413376.png": "/unvent/static/media/cert2.8a413376.png",
+    "static/media/cert3.8a413376.png": "/unvent/static/media/cert3.8a413376.png",
+    "static/media/headerlogo.8318ac28.svg": "/unvent/static/media/headerlogo.8318ac28.svg",
+    "static/media/map.d2066dbc.svg": "/unvent/static/media/map.d2066dbc.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f6c1fac4.js",
+    "static/css/2.6c5a07f7.chunk.css",
+    "static/js/2.4607a508.chunk.js",
+    "static/css/main.2a788c31.chunk.css",
+    "static/js/main.fe599990.chunk.js"
+  ]
+}
