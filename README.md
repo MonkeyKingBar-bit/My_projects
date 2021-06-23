@@ -11,7 +11,7 @@
 React
 ===
 > In building
-## [React-chat](https://create-app-react.netlify.app/)
+## [Penguin's Chat](https://create-app-react.netlify.app/)
 --- 
 > Without deploy
 ## [Unvent](https://github.com/MonkeyKingBar-bit/react_app)
