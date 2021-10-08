@@ -1,4 +1,5 @@
 # My_projects_deployments
+## [iTechArt React Course](https://clever-minsky-5abe30.netlify.app/)
 ## [Covid-19](https://monkeykingbar-bit.github.io/My_projects/covid-dashboard/dist/index.html)
 ## [Gem-puzzle](https://rolling-scopes-school.github.io/monkeykingbar-bit-JS2020Q3/gem-puzzle/index.html)
 ## [Calculator](https://monkeykingbar-bit-calculator.netlify.app/)
@@ -11,7 +12,6 @@
 React
 ===
 > In building
-## [iTechArt React Course](https://clever-minsky-5abe30.netlify.app/)
 ## [Penguin's Chat](https://penguin-chat.netlify.app/)
 --- 
 > Without deploy
