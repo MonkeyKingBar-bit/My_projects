@@ -1,6 +1,5 @@
 # My_projects_deployments
 
----
 Ruby on Rails
 ===
 ## [iTechArt Rails Course](https://itechart-rails-course.herokuapp.com/)
