@@ -2,6 +2,7 @@
 
 Ruby on Rails
 ===
+## [Cargo Trucking](https://trucking-logistics.herokuapp.com/)
 ## [iTechArt Rails Course](https://itechart-rails-course.herokuapp.com/)
 ---
 React
